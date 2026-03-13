@@ -3,7 +3,7 @@ name: Build Docker Image
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -25,6 +25,6 @@ jobs:
     - name: Build Docker image
       uses: docker/build-push-action@v2
       with:
-        context: .
+        context: ./Devops-master
         push: true
-        tags: anaghakumbale/scholar3:latest
+        tags: amulyasa2003/scholarshipguide:latest
